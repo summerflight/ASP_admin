@@ -243,6 +243,21 @@ td {
 /*달력 헤더*/
 .fc-header-toolbar {
   padding-top: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
+}
+
+/*달력 설정*/
+:root {
+  --fc-event-bg-color: #3c64b1;
+  --fc-event-border-color: #3c64b1;
+  --fc-today-bg-color: rgba(47, 85, 220, 0.08);
+  --fc-bg-event-opacity: 0.3;
+
+  --fc-button-text-color: black;
+  --fc-button-bg-color: #fff;
+  --fc-button-border-color: white;
+  --fc-button-hover-bg-color: rgba(47, 85, 220, 0.08);
+  --fc-button-hover-border-color: rgba(47, 85, 220, 0.08);
+  --fc-button-active-bg-color: #3c64b1;
+  --fc-button-active-border-color: white;
+
 }

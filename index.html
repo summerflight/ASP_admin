@@ -62,9 +62,10 @@
               slotMaxTime: '20:00', // Day 캘린더에서 종료 시간
               // 해더에 표시할 툴바
               headerToolbar: {
-                left: 'prev,next today',
+                left: '',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                right: 'today prev, next'
+                // right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
               },
               initialView: 'dayGridMonth', // 초기 로드 될때 보이는 캘린더 화면(기본 설정: 달)
               initialDate: '2022-10-25', // 초기 날짜 설정 (설정하지 않으면 오늘 날짜가 보인다.)
@@ -121,6 +122,11 @@
                   title: '방제단 전체 미팅',
                   start: '2022-10-17T16:00:00'
                 },
+                {
+                  groupId: 999,
+                  title: '황등농협 정기방제',
+                  start: '2022-10-19T10:00:00'
+                }
               ]
             });
             // 캘린더 랜더링
