@@ -81,6 +81,11 @@ header {
 
 .cld {
   max-width: 1280px;
+  margin-bottom: 100px;
+}
+
+.maincont {
+  margin-bottom: 125px;
 }
 
 #map {
