@@ -29,6 +29,7 @@
           <a href=""><img src="../img/noti.png" alt="알림센터"></a>
         </div>
         <div class="btns">
+          <a href="../index.html"><div class="navbtn">방제 일정</div></a>
           <a href="../01/01.html"><div class="navbtn">방제 지도</div></a>
           <a href="02.html"><div class="navbtn" style="border-bottom: 2px solid white;">방제 기록</div></a>
         </div>
@@ -88,9 +89,25 @@
       </table>
       <div class="bottom">
         <div class="num"><a>〈</a><a style="color:#3C64B1; font-weight:700">1</a><a>2</a><a>3</a><a>4</a><a>...</a><a>17</a><a>〉</a></div>
-        <div class="add"><img src="../img/add.png"><span>방제 추가</span></div>
+        <div class="add" onClick="document.getElementById('modal').style.display='block'" style="cursor:pointer"><img src="../img/add.png"><span>방제 추가</span></div>
         <div class="search"><img src="../img/search.png"><span>검색어를 입력해주세요.</span></div>
       </div>
     </div>
+      
+    <!--모달-->
+    <div id="modal" class="md">
+      <div class="bg"></div>
+      <div class="fg">
+        <div class="fgin">
+          <span class="mdtitle">방제 신청</span>
+          <span class="left">농지 주소</span><input type="text" placeholder=" 농지 주소를 입력해주세요." class="right2">
+          <span class="left">방제 희망일</span><span class="right">방제 희망일을 선택해주세요.</span>
+          <span class="left">요청 사항</span><input type="text" placeholder=" 요청사항을 입력해주세요." class="right2">
+          <button class="cancel" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer">취소</button>
+          <button class="ok" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer">신청</button>
+        </div>
+      </div>
+    </div>
+    <!--모달-->
   </body>
 </html>

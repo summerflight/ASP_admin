@@ -29,6 +29,7 @@
           <a href=""><img src="../img/noti.png" alt="알림센터"></a>
         </div>
         <div class="btns">
+          <a href="../index.html"><div class="navbtn">방제 일정</div></a>
           <a href="01.html"><div class="navbtn" style="border-bottom: 2px solid white;">방제 지도</div></a>
           <a href="../02/02.html"><div class="navbtn">방제 기록</div></a>
         </div>
@@ -42,7 +43,7 @@
         var container = document.getElementById('map');
         var options = {
           center: new kakao.maps.LatLng(35.9781241, 126.9657956),
-          level: 2,
+          level: 3,
           mapTypeId: kakao.maps.MapTypeId. SKYVIEW
         };
         var map = new kakao.maps.Map(container, options);
